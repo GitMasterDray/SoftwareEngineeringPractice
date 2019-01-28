@@ -7,6 +7,7 @@ public class BankAccount {
 
     /**
      * @throws IllegalArgumentException if email is invalid
+     * @isEmailValid if email has a String and Double (balance)
      */
     public BankAccount(String email, double startingBalance){
         if (isEmailValid(email)){
@@ -16,6 +17,7 @@ public class BankAccount {
         else {
             throw new IllegalArgumentException("Email address: " + email + " is invalid, cannot create account");
         }
+
     }
 
     public double getBalance(){

@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BankAccountTest {
 
+
     @Test
     void getBalanceTest() {
         BankAccount bankAccount = new BankAccount("a@b.com", 200);
@@ -25,6 +26,8 @@ class BankAccountTest {
     void isEmailValidTest(){
         assertTrue(BankAccount.isEmailValid( "a@b.com"));
         assertFalse( BankAccount.isEmailValid(""));
+
+        assertEquals("","a@b.com");
     }
 
     @Test
